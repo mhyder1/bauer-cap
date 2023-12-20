@@ -1,15 +1,14 @@
-/**
- * Knex configuration file.
- *
- * You will not need to make changes to this file.
- */
+// Update with your config settings.
 
+/**
+ * @type { Object.<string, import("knex").Knex.Config> }
+ */
 require('dotenv').config();
 const path = require("path");
 
 const {
-  DATABASE_URL = "postgresql://postgres@localhost/postgres",
-  DATABASE_URL_DEVELOPMENT = "postgresql://postgres@localhost/postgres",
+  DATABASE_URL = "postgres://jiuxdbme:AbZzA40iaEKVWxsKrVZNPULkuWDWX_uP@bubble.db.elephantsql.com/jiuxdbme",
+  DATABASE_URL_DEVELOPMENT = "postgres://jiuxdbme:AbZzA40iaEKVWxsKrVZNPULkuWDWX_uP@bubble.db.elephantsql.com/jiuxdbme",
   DATABASE_URL_TEST = "postgresql://postgres@localhost/postgres",
   DATABASE_URL_PREVIEW = "postgresql://postgres@localhost/postgres",
   DEBUG,
@@ -18,7 +17,7 @@ const {
 module.exports = {
   development: {
     client: "postgresql",
-    pool: { min: 1, max: 5 },
+    pool: { min: 1, max: 1 },
     connection: DATABASE_URL_DEVELOPMENT,
     migrations: {
       directory: path.join(__dirname, "src", "db", "migrations"),
@@ -30,7 +29,7 @@ module.exports = {
   },
   test: {
     client: "postgresql",
-    pool: { min: 1, max: 5 },
+    pool: { min: 1, max: 1 },
     connection: DATABASE_URL_TEST,
     migrations: {
       directory: path.join(__dirname, "src", "db", "migrations"),
