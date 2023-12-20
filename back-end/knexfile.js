@@ -7,8 +7,8 @@ require('dotenv').config();
 const path = require("path");
 
 const {
-  DATABASE_URL = "postgres://jiuxdbme:AbZzA40iaEKVWxsKrVZNPULkuWDWX_uP@bubble.db.elephantsql.com/jiuxdbme",
-  DATABASE_URL_DEVELOPMENT = "postgres://jiuxdbme:AbZzA40iaEKVWxsKrVZNPULkuWDWX_uP@bubble.db.elephantsql.com/jiuxdbme",
+  DATABASE_URL = "postgres://jogyvqpe:gFaKljQVS_o7n-rByTrXC_j0ZZtJphp1@bubble.db.elephantsql.com/jogyvqpe",
+  DATABASE_URL_DEVELOPMENT = "postgres://jogyvqpe:gFaKljQVS_o7n-rByTrXC_j0ZZtJphp1@bubble.db.elephantsql.com/jogyvqpe",
   DATABASE_URL_TEST = "postgresql://postgres@localhost/postgres",
   DATABASE_URL_PREVIEW = "postgresql://postgres@localhost/postgres",
   DEBUG,
