@@ -3,14 +3,14 @@
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
  */
-require('dotenv').config();
+require("dotenv").config();
 const path = require("path");
 
 const {
-  DATABASE_URL = "postgres://jogyvqpe:gFaKljQVS_o7n-rByTrXC_j0ZZtJphp1@bubble.db.elephantsql.com/jogyvqpe",
-  DATABASE_URL_DEVELOPMENT = "postgres://jogyvqpe:gFaKljQVS_o7n-rByTrXC_j0ZZtJphp1@bubble.db.elephantsql.com/jogyvqpe",
-  DATABASE_URL_TEST = "postgresql://postgres@localhost/postgres",
-  DATABASE_URL_PREVIEW = "postgresql://postgres@localhost/postgres",
+  DATABASE_URL = "postgres://awembelh:gTzlmocxAxv1XNCen1uB1wXyJR9WBhcO@fanny.db.elephantsql.com/awembelh",
+  DATABASE_URL_DEVELOPMENT = "postgres://awembelh:gTzlmocxAxv1XNCen1uB1wXyJR9WBhcO@fanny.db.elephantsql.com/awembelh",
+  DATABASE_URL_TEST = "postgres://awembelh:gTzlmocxAxv1XNCen1uB1wXyJR9WBhcO@fanny.db.elephantsql.com/awembelh",
+  DATABASE_URL_PREVIEW = "postgres://awembelh:gTzlmocxAxv1XNCen1uB1wXyJR9WBhcO@fanny.db.elephantsql.com/awembelh",
   DEBUG,
 } = process.env;
 
